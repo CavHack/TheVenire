@@ -30,3 +30,15 @@ export function updateTag(tagName, keyName, keyValue, attrName, attrValue ) {
 
 
 }
+
+export function updateMeta(name, content) {
+    updateTag('meta', 'name', name, 'content', content);
+}
+
+export function updateCustomMeta(property, content) {
+    updateTag('meta', 'property', property, 'content', content);
+}
+
+export function updateLink(rel, href) {
+    updateTag('link', 'rel', rel, 'href', href);
+}
