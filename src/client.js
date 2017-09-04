@@ -72,7 +72,19 @@ let onRenderComplete = function initialRenderComplete() {
 	    scrollY = pos.scrollY;
 	} else {
 	    const targetHash = location.hash.substr(1);
-}
+	    if (targetHash) {
+
+		const target = document.getElemetById(targetHash);
+		if (target) {
+		    scrollY = window.pageYOffset + target.getBoundingClientRect().top;
+		}
+	    }
+	}
+
+	// Restore the scroll position if it was saved into the state                                    
+	// or scroll to the given #hash anchor                                                           
+	// or scroll to top of the page  
+
 
 }
 
