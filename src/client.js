@@ -130,6 +130,38 @@ async function onLocationChange(location, action) {
 		
 	    });
 	
+	//Prevent multiple page renders during the routing process
+	if (currentLocation.key !== location.key) {
+	    return;
+	}
+
+	if (route.redirect) {
+	    history.replace(route.redirect);
+	    return;
+	}
+
+	appInstance = ReactDOM.render(
+				      <App contextt = {context}>
+					  {route.component}
+				      </App>,
+				      container,
+				      () => onRenderComplete(route, location), 
+
+
+
+				      );
+    } if catch (error) {
+	if (__DEV__) {
+	    throw error;
+	}
+
+	console.error(error);
+	
+	//Do a full page reload if error occurs during client-side navigation
+	if (action && currentLocation.key == location.key) {
+	    window.loaction.reload();
+	}
     }
 
 }
+
