@@ -54,7 +54,25 @@ let onRenderComplete = function initialRenderComplete() {
 
     if(elem) elem.parentNode.removechild(elem);
     onRenderComplete = function renderComplete(route, location) {
+	document.title = route.title;
 
+	updateMeta('description' route.description);
+	// Update necessary tags in <head> at runtime here, ie:                                          
+	// updateMeta('keywords', route.keywords);                                                       
+	// updateCustomMeta('og:url', route.canonicalUrl);                                               
+	// updateCustomMeta('og:image', route.imageUrl);                                                 
+	// updateLink('canonical', route.canonicalUrl);                                                  
+	// etc.
+
+	let scrollX = 0;
+	let scrollY = 0;
+	const pos = scrollPositionsHistory[location.key];
+	if (pos) {
+	    scrollX = pos.scrollX;
+	    scrollY = pos.scrollY;
+	} else {
+	    const targetHash = location.hash.substr(1);
+}
 
 }
 
