@@ -84,9 +84,52 @@ let onRenderComplete = function initialRenderComplete() {
 	// Restore the scroll position if it was saved into the state                                    
 	// or scroll to the given #hash anchor                                                           
 	// or scroll to top of the page  
+	window.ScrollTo(scrollX, scrollY);
+
+	// Google Analytics tracking. Don't send 'pageview' event after                                  
+	// the initial rendering, as it was already sent   
+
+	if (window.ga) {
+	    window.ga('send', 'pageView', createPath(location));
+	}
+    };
+};
+
+const container = document.getElementById('app');
+let appInstance;
+let currentLocation = history.location;
+
+//Re-render the app when window.location changes
+async function onLocationChange(location, action) {
+
+    //Remember the latest scroll position for the previous location
+    scrollPositionsHistory[currentLocation.key] = {
+	scrollX: window.pageXOffset,
+	scrollY: window.pageYOffset,
+	
+    };
+
+    //Deleted stored scroll position for next Page if any
+    if (action == 'PUSH') {
+	delete scrollPositionsHistory[location.key];
+
+    }
 
 
-}
+    currentLocation = location;
 
+    try {
+	// Traverses the list of routes in the order they are defined until                              
+	// it finds the first route that matches provided URL path string                                
+	// and whose action method returns anything other than `undefined`.   
+    
+	const route = await router.resolve({
+		...context,
+		path: location.pathname, 
+		query: queryString.parse(location.search),
+		
+	    });
+	
+    }
 
 }
