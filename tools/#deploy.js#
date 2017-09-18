@@ -1,0 +1,240 @@
+import path from 'path';
+import fetch from 'node-fetch';
+import { spawn } from './lib/cp';
+import { makeDir, moveDir, cleanDir } from './lib/fs';
+import run from './run';
+
+Last login: Thu Sep  7 15:58:38 on ttys000
+    Abbeys-MacBook-Pro:~ rxdt$ ls
+	ApplicationsDownloadsMoviesPublicminiconda
+	DesktopDropboxMusicVirtualBox VMsminiconda.sh
+	DocumentsLibraryPicturesanacondasoliton-dcos
+	Abbeys-MacBook-Pro:~ rxdt$ cd Downloads
+	    Abbeys-MacBook-Pro:Downloads rxdt$ ls
+2011-08-05 15.31.17.png
+2011-09-14 05.00.35.jpg
+2011-12-03 04.09.50.jpg
+AMLSECTION4_FULL_A.mp4
+AMLSECTION4_FULL_B.mp4
+AMLSECTION4_FULL_C.mp4
+Brave-0.18.23.dmg
+DijkstraCassandraPregel_5A.mp4
+DijkstraCassandraPregel_5B.mp4
+Docker.dmg
+DropboxInstaller.dmg
+		Epic (1).zip
+Epic.app
+Epic.zip
+GitHub Desktop.app
+IMG_3379.MOV
+JosephPollard-AmericanPassPortCopy2016 copy.jpeg
+Logic.doc
+Mesos_Section2_VideoB.mp4
+Mesos_Section3_VideoA.mp4
+Packt Content Template 2017 - Courses.pptx
+SECTION3 - AMLPOLICYCALICO copy.key
+SECTION3 - AMLPOLICYCALICO.pptx
+Section 1 feedback.xlsx
+Section 2 feedback.xlsx
+Section 3 feedback.xlsx
+Section 4 feedback.xlsx
+Section 5 feedback.xlsx
+Section 6 feedback.xlsx
+VirtualBox-5.1.26-117224-OSX.dmg
+artificial_intelligence_columbia_edx-master
+avira_en_av_59abc6fe5fd38__ws.dmg
+dragonsetup.exe
+		image (1).jpg
+image.jpeg
+jre-8u144-macosx-x64.dmg
+machine_learning_columbia_edx-master
+react-starter-kit-master
+		Abbeys-MacBook-Pro:Downloads rxdt$ cd react-starter-kit-master
+		    Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ ls
+			CHANGELOG.mdLICENSE.txtjestpublictools
+			CONTRIBUTING.mdREADME.mdjest.config.jssrcyarn.lock
+			Dockerfiledocspackage.jsontest
+			Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ cd src
+			    Abbeys-MacBook-Pro:src rxdt$ ls
+				DOMUtils.jscomponentscreateFetch.jshistory.jsrouter.jsserver.js
+				client.jsconfig.jsdatapassport.jsroutes
+				Abbeys-MacBook-Pro:src rxdt$ ls
+				    DOMUtils.jscomponentscreateFetch.jshistory.jsrouter.jsserver.js
+				    client.jsconfig.jsdatapassport.jsroutes
+				    Abbeys-MacBook-Pro:src rxdt$ pwd
+/Users/rxdt/Downloads/react-starter-kit-master/src
+					Abbeys-MacBook-Pro:src rxdt$ cd ..
+					    Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ ls
+						CHANGELOG.mdLICENSE.txtjestpublictools
+						CONTRIBUTING.mdREADME.mdjest.config.jssrcyarn.lock
+						Dockerfiledocspackage.jsontest
+						Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ cd public
+						    Abbeys-MacBook-Pro:public rxdt$ ls
+							apple-touch-icon.pngcrossdomain.xmlhumans.txttile-wide.png
+							browserconfig.xmlfavicon.icorobots.txttile.png
+							Abbeys-MacBook-Pro:public rxdt$ cd ..
+							    Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ ls
+								CHANGELOG.mdLICENSE.txtjestpublictools
+								CONTRIBUTING.mdREADME.mdjest.config.jssrcyarn.lock
+								Dockerfiledocspackage.jsontest
+								Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ cd tools
+								    Abbeys-MacBook-Pro:tools rxdt$ ls
+									README.mdcopy.jsrender.jswebpack.config.js
+									build.jsdeploy.jsrun.js
+									bundle.jslibrunServer.js
+									clean.jspostcss.config.jsstart.js
+									Abbeys-MacBook-Pro:tools rxdt$ emacs build.js
+									    Abbeys-MacBook-Pro:tools rxdt$ emacs bundle.js
+										Abbeys-MacBook-Pro:tools rxdt$ ls
+										    README.mdcopy.jsrender.jswebpack.config.js
+										    build.jsdeploy.jsrun.js
+										    bundle.jslibrunServer.js
+										    clean.jspostcss.config.jsstart.js
+										    Abbeys-MacBook-Pro:tools rxdt$ emacs clean.js
+											Abbeys-MacBook-Pro:tools rxdt$ ls
+											    README.mdcopy.jsrender.jswebpack.config.js
+											    build.jsdeploy.jsrun.js
+											    bundle.jslibrunServer.js
+											    clean.jspostcss.config.jsstart.js
+											    Abbeys-MacBook-Pro:tools rxdt$ emacs deploy.js
+
+
+													       // Check if the site was successfully deployed                                                     
+												const response = await fetch(remote.website);
+console.info(
+	     `${remote.website} => ${response.status} ${response.statusText}`,
+	     );
+}
+
+export default deploy;
+
+
+-uuu:**-F1  deploy.js      Bot L133   (Java/l Abbrev)------------------------------------------------
+Auto-saving...done
+    [Restored Sep 7, 2017, 4:50:39 PM]
+    Last login: Thu Sep  7 16:50:35 on console
+	Restored session: Thu Sep  7 16:40:47 PDT 2017
+	    Abbeys-MacBook-Pro:tools rxdt$ emacs deploy.js
+
+		);
+
+// Check if the site was successfully deployed                                                     
+const response = await fetch(remote.website);
+console.info(
+	     `${remote.website} => ${response.status} ${response.statusText}`,
+	     );
+}
+
+export default  
+    Last login: Thu Sep  7 15:58:38 on ttys000
+	Abbeys-MacBook-Pro:~ rxdt$ ls
+	    ApplicationsDownloadsMoviesPublicminiconda
+	    DesktopDropboxMusicVirtualBox VMsminiconda.sh
+	    DocumentsLibraryPicturesanacondasoliton-dcos
+	    Abbeys-MacBook-Pro:~ rxdt$ cd Downloads
+		Abbeys-MacBook-Pro:Downloads rxdt$ ls
+2011-08-05 15.31.17.png
+2011-09-14 05.00.35.jpg
+2011-12-03 04.09.50.jpg
+AMLSECTION4_FULL_A.mp4
+AMLSECTION4_FULL_B.mp4
+AMLSECTION4_FULL_C.mp4
+Brave-0.18.23.dmg
+DijkstraCassandraPregel_5A.mp4
+DijkstraCassandraPregel_5B.mp4
+Docker.dmg
+DropboxInstaller.dmg
+		    Epic (1).zip
+Epic.app
+Epic.zip
+GitHub Desktop.app
+IMG_3379.MOV
+JosephPollard-AmericanPassPortCopy2016 copy.jpeg
+Logic.doc
+Mesos_Section2_VideoB.mp4
+Mesos_Section3_VideoA.mp4
+Packt Content Template 2017 - Courses.pptx
+SECTION3 - AMLPOLICYCALICO copy.key
+SECTION3 - AMLPOLICYCALICO.pptx
+Section 1 feedback.xlsx
+Section 2 feedback.xlsx
+Section 3 feedback.xlsx
+Section 4 feedback.xlsx
+Section 5 feedback.xlsx
+Section 6 feedback.xlsx
+VirtualBox-5.1.26-117224-OSX.dmg
+artificial_intelligence_columbia_edx-master
+avira_en_av_59abc6fe5fd38__ws.dmg
+dragonsetup.exe
+		    image (1).jpg
+image.jpeg
+jre-8u144-macosx-x64.dmg
+machine_learning_columbia_edx-master
+react-starter-kit-master
+		    Abbeys-MacBook-Pro:Downloads rxdt$ cd react-starter-kit-master
+			Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ ls
+			    CHANGELOG.mdLICENSE.txtjestpublictools
+			    CONTRIBUTING.mdREADME.mdjest.config.jssrcyarn.lock
+			    Dockerfiledocspackage.jsontest
+			    Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ cd src
+				Abbeys-MacBook-Pro:src rxdt$ ls
+				    DOMUtils.jscomponentscreateFetch.jshistory.jsrouter.jsserver.js
+				    client.jsconfig.jsdatapassport.jsroutes
+				    Abbeys-MacBook-Pro:src rxdt$ ls
+					DOMUtils.jscomponentscreateFetch.jshistory.jsrouter.jsserver.js
+					client.jsconfig.jsdatapassport.jsroutes
+					Abbeys-MacBook-Pro:src rxdt$ pwd
+/Users/rxdt/Downloads/react-starter-kit-master/src
+					    Abbeys-MacBook-Pro:src rxdt$ cd ..
+						Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ ls
+						    CHANGELOG.mdLICENSE.txtjestpublictools
+						    CONTRIBUTING.mdREADME.mdjest.config.jssrcyarn.lock
+						    Dockerfiledocspackage.jsontest
+						    Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ cd public
+							Abbeys-MacBook-Pro:public rxdt$ ls
+							    apple-touch-icon.pngcrossdomain.xmlhumans.txttile-wide.png
+							    browserconfig.xmlfavicon.icorobots.txttile.png
+							    Abbeys-MacBook-Pro:public rxdt$ cd ..
+								Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ ls
+								    CHANGELOG.mdLICENSE.txtjestpublictools
+								    CONTRIBUTING.mdREADME.mdjest.config.jssrcyarn.lock
+								    Dockerfiledocspackage.jsontest
+								    Abbeys-MacBook-Pro:react-starter-kit-master rxdt$ cd tools
+									Abbeys-MacBook-Pro:tools rxdt$ ls
+									    README.mdcopy.jsrender.jswebpack.config.js
+									    build.jsdeploy.jsrun.js
+									    bundle.jslibrunServer.js
+			OA						    clean.jspostcss.config.jsstart.js
+									    Abbeys-MacBook-Pro:tools rxdt$ emacs build.js
+		OA								Abbeys-MacBook-Pro:tools rxdt$ emacs bundle.js
+										    Abbeys-MacBook-Pro:tools rxdt$ ls
+											README.mdcopy.jsrender.jswebpack.config.js
+											build.jsdeploy.jsrun.js
+											bundle.jslibrunServer.js
+											clean.jspostcss.config.jsstart.js
+											Abbeys-MacBook-Pro:tools rxdt$ emacs clean.js
+											    Abbeys-MacBook-Pro:tools rxdt$ ls
+												README.mdcopy.jsrender.jswebpack.config.js
+												build.jsdeploy.jsrun.js
+												bundle.jslibrunServer.js
+												clean.jspostcss.config.jsstart.js
+												Abbeys-MacBook-Pro:tools rxdt$ emacs deploy.js
+
+
+														   // Check if the site was successfully deployed                                                     
+												    const response = await fetch(remote.website);
+console.info(
+	     `${remote.website} => ${response.status} ${response.statusText}`,
+	     );
+}
+
+export default deploy;
+
+
+-uuu:**-F1  deploy.js      Bot L133   (Java/l Abbrev)------------------------------------------------
+Auto-saving...done
+    [R`${remote.website} => ${response.status} ${response.statusText}`,
+     );
+}
+
+export default 

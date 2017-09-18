@@ -35,3 +35,5 @@ class App extends React.PureComponent {
 	return React.Children.only(this.props.children);
     }
 }
+
+export default App;
